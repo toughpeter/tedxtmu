@@ -120,10 +120,10 @@ a {
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -124px;
+  background-position: center bottom;
   background-image: url(../images/thinker.jpg);
   background-attachment: fixed;
-  height: 640px;
+  min-height: 640px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -220,7 +220,7 @@ a {
 /* line 204, ../sass/screen.sass */
 #about {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 0;
   text-align: justify;
 }
 /* line 209, ../sass/screen.sass */
@@ -317,59 +317,89 @@ a {
   left: 0;
 }
 
-/* line 267, ../sass/screen.sass */
-.partnar {
+/* line 266, ../sass/screen.sass */
+.volunteer {
+  background-color: #aa1923;
+  padding: 60px 0 50px 0;
+}
+/* line 269, ../sass/screen.sass */
+.volunteer h4, .volunteer p {
+  color: white;
+}
+/* line 271, ../sass/screen.sass */
+.volunteer a {
+  color: #aa1923;
+  padding: 10px;
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/* line 281, ../sass/screen.sass */
+.volunteer a:hover {
+  color: white;
+  background-color: #aa1923;
+}
+
+/* line 287, ../sass/screen.sass */
+.partner {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
   background-image: url(../images/glass.png);
   padding: 20px 0;
 }
-/* line 270, ../sass/screen.sass */
-.partnar h3, .partnar h5 {
+/* line 290, ../sass/screen.sass */
+.partner h3, .partner h5 {
   color: white;
 }
-/* line 272, ../sass/screen.sass */
-.partnar h3 {
+/* line 292, ../sass/screen.sass */
+.partner h3 {
   margin-top: 40px;
   border-bottom: 1px solid #cccccc;
 }
-/* line 275, ../sass/screen.sass */
-.partnar .th {
+/* line 295, ../sass/screen.sass */
+.partner .th {
   background-color: white;
   margin: 4px 4px 8px 4px;
   max-width: 120px;
 }
-/* line 279, ../sass/screen.sass */
-.partnar .partnar_container {
+/* line 299, ../sass/screen.sass */
+.partner .partner_container {
   display: block;
 }
-/* line 281, ../sass/screen.sass */
-.partnar .partnar_container h5, .partnar .partnar_container img, .partnar .partnar_container a {
+/* line 301, ../sass/screen.sass */
+.partner .partner_container h5, .partner .partner_container img, .partner .partner_container a {
   display: inline-block;
 }
-/* line 283, ../sass/screen.sass */
-.partnar .partnar_container h5 {
+/* line 303, ../sass/screen.sass */
+.partner .partner_container h5 {
   width: 360px;
 }
-/* line 285, ../sass/screen.sass */
-.partnar .partnar_container img {
+/* line 305, ../sass/screen.sass */
+.partner .partner_container img {
   max-height: 80px;
 }
-/* line 287, ../sass/screen.sass */
-.partnar .partnar_container ul, .partnar .partnar_container li {
+/* line 307, ../sass/screen.sass */
+.partner .partner_container ul, .partner .partner_container li {
   list-style-type: none;
 }
-/* line 289, ../sass/screen.sass */
-.partnar .support_container {
+/* line 309, ../sass/screen.sass */
+.partner .sponsor_container {
   display: block;
 }
-/* line 291, ../sass/screen.sass */
-.partnar .support_container h5 {
+/* line 311, ../sass/screen.sass */
+.partner .sponsor_container h5 {
   display: block;
 }
 
-/* line 296, ../sass/screen.sass */
+/* line 316, ../sass/screen.sass */
 #feeling .watch {
   background-repeat: no-repeat;
   background-size: cover;
@@ -377,24 +407,26 @@ a {
   background-image: url(../images/watch.jpg);
   background-attachment: fixed;
   height: 100%;
-  min-height: 620px;
+  min-height: 680px;
   width: 100%;
   position: relative;
 }
-/* line 303, ../sass/screen.sass */
+/* line 323, ../sass/screen.sass */
 #feeling .watch img {
   position: absolute;
   left: 10%;
-  top: 10%;
+  top: 15%;
 }
-/* line 307, ../sass/screen.sass */
+/* line 327, ../sass/screen.sass */
 #feeling .watch .info {
-  width: 320px;
+  background-color: rgba(17, 17, 17, 0.8);
+  width: 380px;
+  padding: 20px;
   position: absolute;
-  right: 0%;
-  bottom: 50%;
+  right: 12%;
+  top: 20%;
 }
-/* line 312, ../sass/screen.sass */
+/* line 334, ../sass/screen.sass */
 #feeling .watch .info h2 {
   color: white;
   text-align: left;
@@ -402,72 +434,93 @@ a {
   padding: 0;
   line-height: 1.4;
 }
-/* line 318, ../sass/screen.sass */
+/* line 340, ../sass/screen.sass */
+#feeling .watch .info a {
+  color: #aa1923;
+  padding: 10px;
+  display: block;
+  max-width: 340px;
+  width: auto;
+  text-align: center;
+  font-size: 24px;
+  margin: 20px auto 0 auto;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/* line 352, ../sass/screen.sass */
+#feeling .watch .info a:hover {
+  color: white;
+  background-color: #b41923;
+}
+/* line 355, ../sass/screen.sass */
 #feeling .watch .quote {
   background-color: rgba(17, 17, 17, 0.8);
   padding: 8px;
   position: absolute;
   right: 0%;
-  bottom: 10%;
+  top: 64%;
 }
-/* line 324, ../sass/screen.sass */
+/* line 361, ../sass/screen.sass */
 #feeling .watch .quote h3 {
   line-height: 30px;
   text-align: left;
   color: white;
 }
-/* line 328, ../sass/screen.sass */
+/* line 365, ../sass/screen.sass */
 #feeling .watch .quote h4 {
   color: white;
   text-align: right;
 }
-/* line 331, ../sass/screen.sass */
+/* line 368, ../sass/screen.sass */
 #feeling .watch .quote span {
   font-size: 60%;
   margin-right: 8px;
 }
-/* line 334, ../sass/screen.sass */
+/* line 371, ../sass/screen.sass */
 #feeling h3 {
   line-height: 60px;
   text-align: center;
 }
-/* line 337, ../sass/screen.sass */
+/* line 374, ../sass/screen.sass */
 #feeling .speaker {
   padding: 12px 0;
   background-color: #aa1923;
 }
-/* line 340, ../sass/screen.sass */
+/* line 377, ../sass/screen.sass */
 #feeling .speaker h3 {
   color: white;
   line-height: 60px;
 }
-/* line 343, ../sass/screen.sass */
+/* line 380, ../sass/screen.sass */
 #feeling .speaker h4 {
   color: white;
   line-height: 30px;
   margin: 8px 0;
 }
-/* line 347, ../sass/screen.sass */
-#feeling .speaker p, #feeling .speaker a:hover {
+/* line 384, ../sass/screen.sass */
+#feeling .speaker p, #feeling .speaker a {
   color: white;
   text-align: justify;
 }
-/* line 350, ../sass/screen.sass */
-#feeling .speaker a {
+/* line 387, ../sass/screen.sass */
+#feeling .speaker a:hover {
   color: rgba(255, 255, 255, 0.7);
-  text-align: justify;
 }
-/* line 353, ../sass/screen.sass */
+/* line 389, ../sass/screen.sass */
 #feeling .speaker .row {
   padding-bottom: 40px;
 }
-/* line 355, ../sass/screen.sass */
+/* line 391, ../sass/screen.sass */
 #feeling .speaker .th {
   max-width: 220px;
   margin-bottom: 20px;
 }
 
-/* line 358, ../sass/screen.sass */
+/* line 394, ../sass/screen.sass */
 #event {
   background-repeat: no-repeat;
   background-size: cover;
@@ -477,37 +530,37 @@ a {
   padding-bottom: 60px;
   padding-top: 20px;
 }
-/* line 364, ../sass/screen.sass */
+/* line 400, ../sass/screen.sass */
 #event p, #event h6, #event h4, #event h5 {
   color: #111111;
 }
-/* line 366, ../sass/screen.sass */
+/* line 402, ../sass/screen.sass */
 #event p {
   font-size: 14px;
 }
-/* line 368, ../sass/screen.sass */
+/* line 404, ../sass/screen.sass */
 #event h2 {
   margin-top: 0;
   color: white;
 }
-/* line 373, ../sass/screen.sass */
+/* line 409, ../sass/screen.sass */
 #event .event_info {
   background-color: rgba(250, 250, 250, 0.9);
-  width: 97%;
+  width: 94%;
   max-width: 780px;
-  padding: 1.5%;
+  padding: 3%;
   margin: 0 auto;
   display: block;
 }
-/* line 381, ../sass/screen.sass */
+/* line 417, ../sass/screen.sass */
 #event .event_info h4, #event .event_info br {
   clear: both;
 }
-/* line 383, ../sass/screen.sass */
+/* line 419, ../sass/screen.sass */
 #event .event_info .link {
   float: right;
   display: block;
-  margin: 8px 0;
+  margin: 8px 0 32px 0;
   width: 128px;
   text-align: center;
   color: white;
@@ -519,32 +572,32 @@ a {
   -webkit-border-radius: 3px;
   background-color: #c81e2d;
 }
-/* line 396, ../sass/screen.sass */
+/* line 432, ../sass/screen.sass */
 #event .event_info .link:hover {
   background-color: white;
   color: rgba(190, 30, 45, 0.8);
 }
 
-/* line 400, ../sass/screen.sass */
+/* line 436, ../sass/screen.sass */
 #contact {
   box-shadow: 2px 1px 5px rgba(17, 17, 17, 0.3);
   padding-bottom: 40px;
   padding-top: 4px;
   background-color: #f8fafa;
 }
-/* line 405, ../sass/screen.sass */
+/* line 441, ../sass/screen.sass */
 #contact span {
   margin-right: 12px;
 }
 
-/* line 408, ../sass/screen.sass */
+/* line 444, ../sass/screen.sass */
 footer {
   background-color: #be1e2d;
   min-height: 48px;
   height: auto;
   padding-top: 12px;
 }
-/* line 413, ../sass/screen.sass */
+/* line 449, ../sass/screen.sass */
 footer p {
   color: white;
   text-align: center;
@@ -552,34 +605,382 @@ footer p {
   line-height: 1.4;
 }
 
-/* line 420, ../sass/screen.sass */
-#toggle-view {
-  width: 100%;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+@media only screen and (max-width: 64em) {
+  /* line 463, ../sass/screen.sass */
+  .hero {
+    box-shadow: 1px 1px 3px rgba(102, 102, 102, 0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(../images/thinker.jpg);
+    background-attachment: scroll !important;
+    height: 520px;
+  }
+  /* line 469, ../sass/screen.sass */
+  .hero h1 {
+    position: absolute;
+    display: block;
+    text-shadow: 2px 2px 4px rgba(102, 102, 102, 0.6);
+    text-align: left;
+    top: 16%;
+    left: 5%;
+    line-height: 40px;
+    color: white;
+  }
+  /* line 478, ../sass/screen.sass */
+  .hero h1 span {
+    margin-right: 12px;
+    font-size: 60%;
+  }
+  /* line 481, ../sass/screen.sass */
+  .hero h3 {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    line-height: 40px;
+  }
+  /* line 486, ../sass/screen.sass */
+  .hero .logo {
+    width: 280px;
+    padding: 8px;
+    height: auto;
+    top: 28%;
+    left: 10%;
+  }
+  /* line 492, ../sass/screen.sass */
+  .hero .social {
+    bottom: 1%;
+    right: 1%;
+  }
+
+  /* line 496, ../sass/screen.sass */
+  #about {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* line 501, ../sass/screen.sass */
+  #feeling .watch {
+    background-attachment: scroll !important;
+    height: 580px;
+    width: 100%;
+    position: relative;
+  }
+  /* line 506, ../sass/screen.sass */
+  #feeling .watch img {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    left: 9%;
+    top: 15%;
+  }
+  /* line 512, ../sass/screen.sass */
+  #feeling .watch .info {
+    width: auto;
+    padding: 10px;
+    right: 8%;
+    top: 40%;
+    background-color: rgba(17, 17, 17, 0.8);
+  }
+  /* line 518, ../sass/screen.sass */
+  #feeling .watch .info h2 {
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+  }
+  /* line 524, ../sass/screen.sass */
+  #feeling .watch .quote {
+    background-color: rgba(17, 17, 17, 0.8);
+    padding: 8px;
+    position: absolute;
+    right: 0%;
+    top: 80%;
+  }
+  /* line 530, ../sass/screen.sass */
+  #feeling .watch .quote h3 {
+    line-height: 30px;
+    text-align: left;
+    color: white;
+  }
+  /* line 534, ../sass/screen.sass */
+  #feeling .watch .quote h4 {
+    color: white;
+    text-align: right;
+  }
+  /* line 537, ../sass/screen.sass */
+  #feeling .watch .quote span {
+    font-size: 60%;
+    margin-right: 8px;
+  }
+  /* line 540, ../sass/screen.sass */
+  #feeling h3 {
+    line-height: 60px;
+    text-align: center;
+  }
+  /* line 544, ../sass/screen.sass */
+  #feeling .speaker h4 {
+    font-size: 22px;
+  }
+  /* line 546, ../sass/screen.sass */
+  #feeling .speaker .th {
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
-/* line 425, ../sass/screen.sass */
-#toggle-view span {
-  bottom: 0;
-  right: 0;
-}
-/* line 429, ../sass/screen.sass */
-#toggle-view li {
-  margin: 0px;
-  position: relative;
-  cursor: pointer;
-}
-/* line 433, ../sass/screen.sass */
-#toggle-view .drop {
-  position: absolute;
-  right: 5px;
-  top: 0;
-  color: #cccccc;
-  font-size: 13px;
-}
-/* line 439, ../sass/screen.sass */
-#toggle-view .panel {
-  margin: 0;
-  display: none;
+@media only screen and (max-width: 40em) {
+  /* line 556, ../sass/screen.sass */
+  .hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    background-image: url(../images/cloud.jpg);
+    box-shadow: 2px 2px 3px rgba(82, 82, 82, 0.8);
+    background-attachment: scroll !important;
+    height: 480px;
+  }
+  /* line 562, ../sass/screen.sass */
+  .hero h1 {
+    position: absolute;
+    display: block;
+    text-shadow: 2px 2px 4px rgba(102, 102, 102, 0.6);
+    text-align: left;
+    top: 16%;
+    left: 5%;
+    line-height: 40px;
+    color: white;
+  }
+  /* line 571, ../sass/screen.sass */
+  .hero h1 span {
+    margin-right: 12px;
+    font-size: 60%;
+  }
+  /* line 574, ../sass/screen.sass */
+  .hero h3 {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    line-height: 40px;
+  }
+  /* line 579, ../sass/screen.sass */
+  .hero .logo {
+    width: 280px;
+    padding: 8px;
+    height: auto;
+    top: 28%;
+    left: 12%;
+  }
+  /* line 585, ../sass/screen.sass */
+  .hero .social {
+    bottom: 1%;
+    right: 1%;
+  }
+
+  /* line 589, ../sass/screen.sass */
+  #feeling .watch {
+    height: 480px;
+    width: 100%;
+    position: relative;
+  }
+  /* line 593, ../sass/screen.sass */
+  #feeling .watch img {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    left: 9%;
+    top: 5%;
+  }
+  /* line 599, ../sass/screen.sass */
+  #feeling .watch .info {
+    width: 96%;
+    margin: 0 2%;
+    right: 0%;
+    top: 70%;
+    background-color: rgba(17, 17, 17, 0.9);
+  }
+  /* line 605, ../sass/screen.sass */
+  #feeling .watch .info h2 {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    width: 316px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.4;
+  }
+  /* line 613, ../sass/screen.sass */
+  #feeling .watch .quote {
+    background-color: rgba(17, 17, 17, 0.9);
+    padding: 8px;
+    position: absolute;
+    right: 0%;
+    top: 44%;
+  }
+  /* line 619, ../sass/screen.sass */
+  #feeling .watch .quote h3 {
+    line-height: 24px;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+  }
+  /* line 624, ../sass/screen.sass */
+  #feeling .watch .quote h4 {
+    color: white;
+    text-align: right;
+  }
+  /* line 627, ../sass/screen.sass */
+  #feeling .watch .quote span {
+    font-size: 60%;
+    margin-right: 8px;
+  }
+
+  /* line 632, ../sass/screen.sass */
+  #event .event_info .link {
+    float: none;
+    display: block;
+    font-size: 20px;
+    margin: 8px auto 32px auto;
+    width: 240px;
+    text-align: center;
+    color: white;
+    border: 1px solid #be1e2d;
+    padding: 20px 0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #c81e2d;
+  }
+  /* line 645, ../sass/screen.sass */
+  #event .event_info .link:hover {
+    background-color: white;
+    color: rgba(190, 30, 45, 0.8);
+  }
+
+  /* line 651, ../sass/screen.sass */
+  #team h2, #team p {
+    color: #545454;
+    font-weight: 100;
+  }
+  /* line 654, ../sass/screen.sass */
+  #team .th {
+    margin: 2px;
+    max-width: 80px;
+  }
+  /* line 657, ../sass/screen.sass */
+  #team .active_container {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    position: relative;
+  }
+  /* line 662, ../sass/screen.sass */
+  #team .active_container h5 {
+    margin: 0 0 6px 0;
+    padding: 2px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #111111;
+    font-size: 12px;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 2px;
+  }
+
+  /* line 675, ../sass/screen.sass */
+  .volunteer {
+    background-color: #aa1923;
+    padding: 60px 0 50px 0;
+  }
+  /* line 678, ../sass/screen.sass */
+  .volunteer h4, .volunteer p {
+    color: white;
+  }
+  /* line 680, ../sass/screen.sass */
+  .volunteer a {
+    font-size: 20px;
+    color: #aa1923;
+    padding: 12px;
+    display: block;
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+  /* line 691, ../sass/screen.sass */
+  .volunteer a:hover {
+    color: white;
+    background-color: #aa1923;
+  }
+
+  /* line 694, ../sass/screen.sass */
+  .partner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-image: url(../images/glass.png);
+    padding: 10px 0;
+  }
+  /* line 697, ../sass/screen.sass */
+  .partner h3, .partner h5 {
+    color: white;
+  }
+  /* line 699, ../sass/screen.sass */
+  .partner h3 {
+    margin-top: 40px;
+    border-bottom: 1px solid #cccccc;
+  }
+  /* line 702, ../sass/screen.sass */
+  .partner .th {
+    background-color: white;
+    margin: 4px 4px 8px 4px;
+    max-width: 80px;
+  }
+  /* line 706, ../sass/screen.sass */
+  .partner .partner_container {
+    display: block;
+  }
+  /* line 708, ../sass/screen.sass */
+  .partner .partner_container h5, .partner .partner_container img, .partner .partner_container a {
+    display: inline-block;
+  }
+  /* line 710, ../sass/screen.sass */
+  .partner .partner_container h5 {
+    font-size: 16px;
+    width: 360px;
+  }
+  /* line 713, ../sass/screen.sass */
+  .partner .partner_container img {
+    max-height: 80px;
+  }
+  /* line 715, ../sass/screen.sass */
+  .partner .partner_container ul, .partner .partner_container li {
+    list-style-type: none;
+  }
+  /* line 717, ../sass/screen.sass */
+  .partner .sponsor_container {
+    display: block;
+  }
+  /* line 719, ../sass/screen.sass */
+  .partner .sponsor_container h5 {
+    font-size: 16px;
+    display: block;
+  }
+
+  /* line 723, ../sass/screen.sass */
+  #contact {
+    padding: 4px 20px 20px 20px;
+    background-color: #f8fafa;
+  }
 }
